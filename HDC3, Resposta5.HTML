@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+let numero1 = parseInt(prompt("Digite o primeiro número: "));
+let numero2 = parseInt(prompt("Digite o segundo número: "));
+
+let menor = Math.min(numero1, numero2);
+let maior = Math.max(numero1, numero2);
+
+let soma = 0; 
+let contador = 0; 
+
+for (let i = menor; i <= maior; i++) {
+    soma += i; 
+    contador++; 
+}
+
+let media = soma / contador;
+    
+document.write("A média aritmética dos números entre " + menor + " e " + maior + " é: " + media);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

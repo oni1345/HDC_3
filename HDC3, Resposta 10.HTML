@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    let N = parseInt(
+      prompt("Digite o valor de N para gerar as tabuadas de 1 até N:")
+    );
+
+    if (isNaN(N) || N <= 0) {
+      console.log("Por favor, insira um número inteiro positivo.");
+    } else {
+      for (let i = 1; i <= N; i++) {
+        console.log(`\nTabuada do ${i}:`);
+        for (let j = 1; j <= 10; j++) {
+          console.log(`${i} x ${j} = ${i * j}`);
+        }
+      }
+    }
+  </script>
+  <body></body>
+</html>

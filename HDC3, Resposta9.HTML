@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+document.write("Os 10 primeiros números inteiros maiores que 100 aparecerão um de cada vez:<br>");
+
+let numero = 101; 
+let contador = 0; 
+
+let intervalo = setInterval(function () {
+    document.write(numero + "<br>"); 
+    numero++; 
+    contador++;
+
+    if (contador === 10) {
+        clearInterval(intervalo); 
+    }
+}, 500); 
+
+</script>
+<body>
+    
+</body>
+</html>

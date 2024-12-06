@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+let N = parseInt(prompt("Digite um valor maior que zero:"));
+
+while (isNaN(N) || N <= 0) {
+    N = parseInt(prompt("Valor inválido! Digite um número maior que zero:"));
+}
+
+document.write("Os valores inteiros de 1 até " + N + " são:<br>");
+for (let i = 1; i <= N; i++) {
+    document.write(i + "<br>");
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
